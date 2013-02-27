@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouTube Redact",
+  "description": "Silence YouTube comments by using Redacted Script (https://github.com/christiannaths/Redacted-Font), a font by Christian Naths.",
+  "version": "1.0",
+  
+  "content_scripts": [{
+    "matches": [ "*://*.youtube.com/*" ],
+    "css": [ "youtube-redact.css" ]
+  }],
+
+  "permissions": [
+    "tabs", "*://*.youtube.com/*"
+  ],
+
+  "icons": {
+    "128": "icon128.png"
+  }
+}
