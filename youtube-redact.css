@@ -5,6 +5,6 @@
   font-style: normal;
 }
 
-.comment-text {
+.comment-text:not(:hover) {
   font-family: "redacted script";
 }
